@@ -1,0 +1,119 @@
+*{
+margin:0;
+paddding:0;
+box-sizing: border-box;
+}
+
+body{
+font-family: 'Inter' ,sans-serif;
+}
+
+.navbar{
+background-color:#adb5bd;
+border-bottom:0.2rem solid #000;
+border-top:0.2rem solid #000;
+
+
+}
+.navbar-brand{
+font-size: 2rem;
+font-weight: 600;
+}
+
+.header h2{
+margin-top: 1rem;
+margin-bottom: 3rem;
+
+/*background-color: #dee2e6;*/
+text-align: center;
+font-weight:700;
+}
+
+.section{
+margin: 1rem 1rem;
+
+}
+
+.section h2{
+text-align: center;
+font-weight: 600;
+margin-bottom: 0.2rem;
+padding: 0.6rem 0;
+}
+.section p{
+padding: 0.2rem 2rem;
+}
+
+
+
+.section div{
+
+background-color: #868e96;
+}
+
+
+/* for Desktops --> */
+@media (min-width:992px){
+ .fordesktop {
+  display:grid;
+  grid-template-columns:32.8% 32.8% 32.8%;
+  column-gap: 1rem;
+}
+.dropdown{
+display: none;
+}
+
+  
+}
+
+/*for the Mobile */
+
+@media (max-width: 767px){
+.btn{
+margin-right:3rem;
+}
+
+.dropdown-menu: active{
+display: flex;
+flex-direction: column;
+}
+
+.dropdown-item{
+display: inline-block;
+}
+
+}
+
+/* for the Tablets */
+@media (min-width:768px) and (max-width:991px){
+
+.fortab{
+  padding:1.2rem 1.1rem;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+
+}
+.special{
+  grid-column:1/-1;
+}
+
+.dropdown{
+display: none;
+}
+
+.fortab p {
+font-size: 1.5rem;
+}
+
+.fortab h2 {
+font-size: 3rem;
+}
+.header h2{
+font-size: 3rem;
+}
+.navbar a{
+font-size: 3rem;
+}
+}
